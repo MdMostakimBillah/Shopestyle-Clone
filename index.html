@@ -1,0 +1,2775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------- font awesome link  --------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!----------------- bootstrap5  --------------------->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!---------------- custome css here  ---------------------->
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Shopstyle</title>
+</head>
+<body>
+
+    <!------------------- header section start here  ----------------->
+        <header>
+            <div class="top-title">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-12 mx-auto text-center">
+                            <strong>New! Members Only: Exclusive Offers & Sales! <a href="">Learn More</a></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-manu-div">
+                <div class="main-nav-width">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mx-auto">
+                                <div class="Warper-header">
+                                    <div class="main-logo">
+                                       <span onclick="showFunction()" id="bar-nav" class="bar--"><i class="fa-solid fa-bars"></i></span> <img src="./img/logo.png" class="img-fluid" alt="logo">
+                                    </div>
+                                    <!-- responsive navbar  -->
+                                    <div class="responsive-navbar">
+                                        <div onclick="hideFunction()" class="close-button">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                        <div class="responsive-navbar-header">
+                                            <div>Women</div>
+                                            <div>Men</div>
+                                            <div>Kids</div>
+                                            <div>Home</div>
+                                        </div>
+                                        <div class="list-responsive">
+                                            <ul>
+                                                <li class="act"><a href="">Brands</a></li>
+                                                <li class="act"><a href="">Trending</a></li>
+                                                <li class="act"><a href="">Shop All Womens</a></li>
+                                                <li class="act"><a href="">Dresses</a></li>
+                                                <li class="act"><a href="">Tops</a></li>
+                                                <li class="act"><a href="">Outerwear</a></li>
+                                                <li class="act"><a href="">Shoes</a></li>
+                                                <li class="act"><a href="">Handbags</a></li>
+                                                <li class="act"><a href="">Beauty</a></li>
+                                                <li class="act"><a href="">Jewellry</a></li>
+                                                <li><a href="">About</a></li>
+                                                <li><a href="">Advertising</a></li>
+                                                <li><a href="">Careers</a></li>
+                                                <li><a href="">FAQ</a></li>
+                                                <li><a href="">Contact</a></li>
+                                                <li><a href="">Affiliate Program</a></li>
+                                                <li><a href="">Partner With us</a></li>
+                                                <li><a href="">Terms</a></li>
+                                                <li><a href="">Privacy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="middle-top-nav-bar">
+                                        <div class="nav-input-div">
+                                            <input type="text" placeholder="What you are looking for?"/>
+                                        </div>
+                                        <div class="middle-nav">
+                                            <div class="select-option-wraper-in-navbar dropdown">
+                                                <a style="text-decoration: none;" class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" href=""><span >All</span> </a>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <li><a class="dropdown-item" href="#">Men</a></li>
+                                                    <li><a class="dropdown-item" href="#">Women</a></li>
+                                                    <li><a class="dropdown-item" href="#">Young</a></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="search-icon-div">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="last-nav-bar">
+                                        <div>
+                                            <a class="button- join-now" href="">
+                                                Join Now
+                                            </a>
+                                            <a class="button- log-in" href="">
+                                                Log In
+                                            </a>
+
+
+
+
+
+
+
+
+
+
+                                            <a class="add-card-btn" onclick="addCart()" href="#">
+                                                <img src="./img/shop.png" class="img-fluid" alt="shopbag">
+                                            </a>
+                                                <!-- add card div  -->
+                                                <div class="addcard_">
+                                                    <div onclick="addCart()" class="close-icon-adcart">
+                                                        <i class="fa-solid fa-xmark"></i>
+                                                    </div>   
+                                                    <div class="card-inter">
+                                                        <h1>
+                                                            ShopStyle Checkout
+                                                        </h1>  
+                                                        <div style="width: 100%; text-align: center;">
+                                                            <img src="./img/Screenshot_1.png" alt="">
+                                                            <h2>No items in your card</h2>
+                                                        </div>
+                                                        
+                                                        <button>Checkout</button>
+                                                    </div>                            
+                                                </div>
+                                        </div>
+                                    
+                                        <div class="language-div">
+                                            <img src="./img/English-resize.svg" class="img-fluid" alt="flag"><span>EN</span> <i class="fa-solid fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-nav-list-here">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12-col-md-12 mx-auto text-center">
+                                <div class="list-nav-bottom">
+                                    <ul>
+                                        <li><a href="">Brands</a></li>
+                                        <li><a href="">Women</a></li>
+                                        <li><a href="">Men</a></li>
+                                        <li><a href="">Shoes</a></li>
+                                        <li><a href="">Bags</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                        <li><a href="">Home</a></li>
+                                        <li><a href="">Beauty</a></li>
+                                        <li><a href="">Kids</a></li>
+                                        <li><a href="">Pre-Owned</a></li>
+                                        <li><a href="">Trends</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-nav-">
+                    <div class="middle-top-nav-bar2">
+                        <div class="nav-input-div">
+                            <input type="text" placeholder="What you are looking for?"/>
+                        </div>
+                        <div class="middle-nav">
+                            <div class="select-option-wraper-in-navbar dropdown">
+                                <a style="text-decoration: none;" class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" href=""><span >All</span> </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Men</a></li>
+                                    <li><a class="dropdown-item" href="#">Women</a></li>
+                                    <li><a class="dropdown-item" href="#">Young</a></li>
+                                  </ul>
+                             </div>
+                        </div>
+                        <div class="search-icon-div">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </header>
+    <!------------------- header section end here  ----------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------------------------ main section start here  ---------------------->
+    <section>
+        <div>
+            
+            <div class="left-site">
+                <div>
+                    <div class="top-sitebar-tag">
+                        <span>All/</span>
+                        <span>Women</span>
+                        <span>Clothing</span>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq- active-h">
+                        <div class="question-">
+                            <div class="qiestion-header">
+                                <h5>Category</h5> <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <span>Clothing</span>
+                        </div>
+                        <div class="answer-question">
+                            <ul>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span>Activewear</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span>Outerwear</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span>Dresses</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span>Jackets</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span>Jeans</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span> Jumpsuits & Rompers </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span> Knitwear </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span> Lingerie & Nightwear </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span> Shorts </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span>  Skirts  </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span>  Jumpers & Hoodies  </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span>  Swimwear  </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span>  Tops  </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input class="radio" type="checkbox">
+                                        <span>  Trousers  </span>
+                                    </label>
+                                </li>
+                                 
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="faq-">
+                        <div class="question-">
+                            <div class="qiestion-header">
+                                <h5>Brand</h5> <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <span>Sea</span>
+                        </div>
+                        <div class="answer-question answer-questionx">
+                            <ul>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Brand</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>A</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>b</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>C</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>D</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>E</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>F</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>G</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>H</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>I</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="faq-">
+                        <div class="question-">
+                            <div class="qiestion-header">
+                                <h5>Sizes</h5> <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <span>All</span>
+                        </div>
+                        <div class="answer-question answer-questionx">
+                            <ul>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Size</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>4-6 (XS)</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>8-10 (S)</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>12-14 (M)</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>16-18 (L)</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="faq-">
+                        <div class="question-">
+                            <div class="qiestion-header">
+                                <h5>Color</h5> <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <span>All</span>
+                        </div>
+                        <div class="answer-question answer-questionx">
+                            <ul>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span> 
+                                            <!-- <div class="color-color"></div> -->
+                                            All Color</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>
+                                            <div style="background-color: gold;" class="color-color"></div>
+                                            Goldr</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>
+                                            <div style="background-color: blueviolet;" class="color-color"></div>
+                                            Blueviolet</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>
+                                            <div style="background-color: aqua;" class="color-color"></div>
+                                            Aqua</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>
+                                            <div style="background-color: black;" class="color-color"></div>
+                                            Black</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>
+                                            <div style="background-color: white;" class="color-color"></div>
+                                            White</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>
+                                            <div style="background-color: brown;" class="color-color"></div>
+                                            Brown</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>
+                                            <div style="background-color: blue;" class="color-color"></div>
+                                            Blue</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input  id="checked" type="checkbox">
+                                        <span>
+                                            <div style="background-color: crimson;" class="color-color"></div>
+                                            Crimson</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>
+                                            <div style="background-color: cyan;" class="color-color"></div>
+                                            Cyan</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="faq-">
+                        <div class="question-">
+                            <div class="qiestion-header">
+                                <h5>Price & Deals</h5> <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <span>All</span>
+                        </div>
+                        <div class="answer-question answer-questionx">
+                            <ul>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>Activewear</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="faq-">
+                        <div class="question-">
+                            <div class="qiestion-header">
+                                <h5>Store</h5> <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <span>All</span>
+                        </div>
+                        <div class="answer-question answer-questionx">
+                            <ul>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>Activewear</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Clothing</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="faq-">
+                        <div class="question-">
+                            <div class="qiestion-header">
+                                <h5>Condition</h5> <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <span>All</span>
+                        </div>
+                        <div class="answer-question answer-questionx">
+                            <ul>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>All Condition</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>New</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="">
+                                        <input id="checked" type="checkbox">
+                                        <span>Pre-owned</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="right-site-product-review right">
+
+                <div class="top-title-in-product-review">
+                    <div class="product-top-header-title">
+                        <h1>Sea Clothing For Women</h1> <i class="bi bi-heart"></i>
+                    </div>
+
+                    <div>
+                        <div class="product-catagoris">
+                            <i class="bi bi-arrow-down-up"></i></i> <a href="#">Sort by:</a><select name="" id="">
+                                <option value="Relevance">Relevance</option>
+                                <option value="Lowest Price">Lowest Price</option>
+                                <option value="Higest Price">Higest Price</option>
+                                <option value="Most Popular">Most Popular</option>
+                                <option value="Most Favorites">Most Favorites</option>
+                                <option value="Newest">Newest</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="brand-selection-list">
+                        <span><b>Brand</b>: Sea <i class="bi bi-x"></i></span> <a href="">Clear All</a>
+                    </div>
+                </div>
+                <div class="main-product-review-divisiton my-4">
+                    <!-- 1 -->
+                    <div class="single-product active-">
+                        <img width="70%" src="./img/1.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>Fernanda V-neck Tile...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £425 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="single-product">
+                        <img width="68%" src="./img/76.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Vienne Broderie-angla... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £348 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="single-product">
+                        <img width="85%" src="./img/44.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Linden Patchwork Floral-...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £540 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="single-product">
+                        <img style="margin-top: 55px; margin-bottom: 60px;" width="100%" src="./img/11.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Cara Balloon-sleeve Cot...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £240 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div>
+                        <img width="100%" height="" src="./img/3.webp" alt="">
+                    </div>
+
+
+
+                    <!-- 6 -->
+                    <div class="single-product">
+                        <img width="85%" src="./img/70.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Tiered Printed Cotton...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £455 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="single-product">
+                        <img style="margin-top: 30px; margin-bottom: 32px;" width="100%" src="./img/35.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Ida Floral-print Quilted ... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £420 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="single-product">
+                        <img style="margin-top: 55px; margin-bottom: 50px;" width="100%" src="./img/41.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Lilly Smocked Floral-print...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £425 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="single-product">
+                        <img style="margin-top: 50px; margin-bottom: 50px;" width="100%" src="./img/43.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Linden Patchwork Floral...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £410 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="single-product">
+                        <img width="65%" src="./img/28.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Heidi Heart-embroidered... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £425 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- 11 -->
+                    <div class="single-product">
+                        <img width="77.5%" src="./img/48.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Paloma Geometric-print...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £295 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 12 -->
+                    <div class="single-product">
+                        <img width="97.5%" src="./img/42.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Lilly Smocked Floral-print...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £530 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 13 -->
+                    <div class="single-product">
+                        <img style="margin-top: 30px; margin-bottom: 32px;" width="100%" src="./img/13.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Corinne Cotton-crochet...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span style="color: red;">£175</span><span > <del>£585</del> </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 14 -->
+                    <div class="single-product">
+                        <img width="85%" src="./img/82.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Violette Printed Embroide...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £529 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 15 -->
+                    <div class="single-product">
+                        <img width="85%" src="./img/56.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Printed Quilted Cott...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £429 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+
+
+
+<!-- 16 -->
+                    <div class="single-product">
+                        <img style="margin-top: 40px; margin-bottom: 45px;" width="100%" src="./img/22.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Gaida Balloon-sleeve Mer... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £480 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 17 -->
+                    <div class="single-product">
+                        <img width="86%" src="./img/6.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Alessia Ruffled Smocked...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £423 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 18 -->
+                    <div class="single-product">
+                        <img width="86%" src="./img/36.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Ida Oversized Belted Q...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £743 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 19 -->
+                    <div class="single-product">
+                        <img width="85.5%" src="./img/39.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Ida Tiered Printed...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £455 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 20 -->
+                    <div>
+                        <img width="100%" style="margin-top:32px" height="" src="./img/2.webp" alt="">
+                    </div>
+
+
+
+                    <!-- 21 -->
+                    <div class="single-product">
+                        <img width="85%" src="./img/80.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Violette Cropped Embr...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £529 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 22 -->
+                    <div class="single-product">
+                        <img width="60%" src="./img/5.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Alessia Floral-print Sm... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £425 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 23 -->
+                    <div class="single-product">
+                        <img width="85%" src="./img/27.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Hayden Cropped Croche...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £423 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 24 -->
+                    <div class="single-product">
+                        <img width="85%" src="./img/58.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Ruffled Shirred Pri...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £455 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 25 -->
+                    <div class="single-product">
+                        <img width="80%" src="./img/sea-nadine-balloon-sleeve-floral-print-cotton-dress-blue-multi.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Nadine Balloon-sleeve...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £498 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 26 -->
+                    <div class="single-product">
+                        <img width="85%" src="./img/56.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Open-back Shirred Qui...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £391 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 27 -->
+                    <div class="single-product">
+                        <img width="85%" src="./img/61.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Rylee Crochet-trimmed...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span> £295 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 28 -->
+                    <div class="single-product">
+                        <img width="85%" src="./img/40.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Lilly Ruffled Smocked...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £606 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 29 -->
+                    <div class="single-product">
+                        <img style="margin-top: 50px; margin-bottom: 53px;" width="100%" src="./img/19.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Gaia Ruched Cotton-bl...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £268 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 30 -->
+                    <div class="single-product">
+                        <img width="72%" src="./img/68.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Stan Ruffled Sandwa...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £425 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 31 -->
+                    <div class="single-product">
+                        <img width="85%" src="./img/53.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Patrizia Reversible...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £315 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 32 -->
+                    <div class="single-product">
+                        <img width="85.5%" src="./img/23.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Gaida Braided Ribbed... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £482 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 33 -->
+                    <div class="single-product">
+                        <img width="53.5%" src="./img/55.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Pippin Patchwork Cotton...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £455 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 34 -->
+                    <div class="single-product">
+                        <img width="86%" src="./img/38.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Ida Ruffled Floral-...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £283 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 35 -->
+                    <div class="single-product">
+                        <img width="86%" src="./img/9.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Bette Faux Shearling-trim...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £958 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!-- 36 -->
+                    <div class="single-product">
+                        <img style="margin-top: 45px; margin-bottom: 45px;" width="100%" src="./img/64.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Stan Pintucked Sandwa... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £348 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 37 -->
+                    <div class="single-product">
+                        <img width="65.5%" src="./img/33.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Ida Exaggerated-collar... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £425 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 38 -->
+                    <div class="single-product">
+                        <img style="margin-top: 40px ; margin-bottom: 26px;" width="100%" src="./img/26.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Hayden Crochet Wool-...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £356 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 39 -->
+                    <div class="single-product">
+                        <img width="84.5%" src="./img/79.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Violette Broderie-an...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £315 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 40 -->
+                    <div class="single-product">
+                        <img width="75%" src="./img/51.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Patrizia Open-back Ruffled...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £423 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+
+                     <!-- 41 -->
+                     <div class="single-product">
+                        <img width="85%" src="./img/77.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Vienne Open-back Smo...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £455 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 42 -->
+                    <div class="single-product">
+                        <img style="margin-top: 50px; margin-bottom: 47px;" width="100%" src="./img/21.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Gaida Balloon-sleeve... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £530 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 43 -->
+                    <div class="single-product">
+                        <img style="margin-top: 40px; margin-bottom: 30px;" width="100%" src="./img/34.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Ida Floral-print Cotton... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £240 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 44 -->
+                    <div class="single-product">
+                        <img style="margin-top: 50px; margin-bottom: 40px;" width="100%" src="./img/46.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Nadine Floral Pintucked... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £348 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 45 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/18.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Fernanda Cutout Tiered... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £423 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 46 -->
+                    <div class="single-product">
+                        <img style="margin-top: 42px; margin-bottom: 40px;" width="100%" src="./img/14.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Dagmar Paperbag-waist... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £295 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 47 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/24.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Harlow Patchwork Printed... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £694 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 48 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/sea-rosita-ruffled-floral-print-cotton-voile-shirt.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Rosita Ruffled Floral...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £268 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 49 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/73.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Tilly Embroidered Flo... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £283 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 50 -->
+                    <div class="single-product">
+                        <img width="72.5%" src="./img/63.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Salma Striped Cotton-... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £370 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+                    <!-- 51 -->
+                    <div class="single-product">
+                        <img style="margin-top: 45px; margin-bottom: 40px;" width="100%" src="./img/20.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Gaia Ruffled Cutout Cot... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £315 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 52 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/25.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Hayden Crocheted Wool... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £561 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 53 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/52.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Patrizia Pintucked Bro...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £268 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 54 -->
+                    <div class="single-product">
+                        <img style="margin-top: 50px; margin-bottom: 30px;" width="100%" src="./img/30.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Heidi Quilted-heart Ope... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £315 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 55 -->
+                    <div class="single-product">
+                        <img style="margin-top: 25px; margin-bottom: 30px;" width="100%" src="./img/69.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Thora Embroidered Cot...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £265 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 56 -->
+                    <div class="single-product">
+                        <img width="77.5%" src="./img/81.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Violette Floral-appliqué... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £455 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 57 -->
+                    <div class="single-product">
+                        <img width="77.1%" src="./img/54.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Phoebe Ruffle-sleeve... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £420 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 58 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/74.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Tilly Tiered Floral-pri... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £583 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 59 -->
+                    <div class="single-product">
+                        <img style="margin-top: 55px; margin-bottom: 45px;" width="100%" src="./img/66.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Stan Quilted Sandwashed...  </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £315 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 60 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/62.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Rylee Wool-blend Top... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £638 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 61 -->
+                    <div class="single-product">
+                        <img style="margin-top: 65px; margin-bottom: 70px;" width="100%" src="./img/15.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Ebba Cable-knit Merin... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £455 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 62 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/16.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Ebba Cable-knit Merino... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £455 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 63 -->
+                    <div class="single-product">
+                        <img width="100%" src="./img/31.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Helena Geometric-print... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £295 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 64 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/sea-ida-quilted-padded-patchwork-printed-cotton-vest.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Ida Quilted Padded Pat... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £529 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 65 -->
+                    <div class="single-product">
+                        <img style="margin-top: 30px; margin-bottom: 17px;" width="100%" src="./img/60.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Rylee Crochet-trimmed... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £425 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 66 -->
+                    <div class="single-product">
+                        <img style="margin-top: 45px; margin-bottom: 32px;" width="100%" src="./img/71.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Till Floral-print Flutter... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £285 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 67 -->
+                    <div class="single-product">
+                        <img width="81%" src="./img/12.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Cara Balloon-sleeve Cot... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £423 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 68 -->
+                    <div class="single-product">
+                        <img width="73.9%" src="./img/67.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Stan Ruffled Sandwashe...</span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £425 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 69 -->
+                    <div class="single-product">
+                        <img style="margin-top: 55px; margin-bottom: 50px;" width="100%" src="./img/17.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Fernanda Balloon-sleeve... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £295 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 70 -->
+                    <div class="single-product">
+                        <img width="72%" src="./img/8.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Arline Smocked Polka-dot... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £423 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 71 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/57.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Ruffled Printed Cotton-po... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £391 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 72 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/10.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Brooke Shirred Printed ... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £423 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 73 -->
+                    <div class="single-product">
+                        <img width="50%" src="./img/7.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span> Alyssa Wide-leg Jeans... </span>
+                        </div>
+                        <div class="text-start amount">
+                           <span style="color:red;">£88</span> <span > <del> £295 </del></span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 74 -->
+                    <div class="single-product">
+                        <img width="84.4%" src="./img/75.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Valerie Tiered Floral-...  </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £374 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <!-- 75 -->
+                    <div class="single-product">
+                        <img style="margin-top: 70px; margin-bottom: 83px;" width="100%" src="./img/78.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Violette Broderie-anglaise... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £375 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                     <!-- 76 -->
+                     <div class="single-product">
+                        <img width="84.4%" src="./img/82.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Patrizia Belted Crochet-... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £423 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                     <!-- 77 -->
+                     <div class="single-product">
+                        <img width="84.4%" src="./img/37.jpg" class="img-fluid" alt="">
+                        <div class="discription-single-product">
+                            <span>  Ida Ruffled Floral-print... </span>
+                        </div>
+                        <div class="text-start amount">
+                            <span > £423 </span>
+                        </div>
+                        <div class="product-icons">
+                            <span><i class="bi bi-heart"></i>
+                                <div class="tooltip-">
+                                    <span>Get a Sale Alert</span>
+                                 </div>
+                            </span>
+                            <span><i class="bi bi-search"></i></span>
+                        </div>
+                        <div class="absolute-div">
+                            <span>at MATCHESFASHION </span>
+                        </div>
+                        <div class="link-icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="pagination-">
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-arrow-left"></i></a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">...</a></li>
+                            <li><a href="">6</a></li>
+                            <li><a href=""><i class="fa-solid fa-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="product-brand-">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="brand-directiory mt-3">
+                                <h6>BRAND DIRECTORY</h6>
+                                <span>Clothing For Women</span>
+                            </div>
+                        </div>
+                        <div class="related-searches">
+                            <h6>RELATED SEARCHES</h6>
+                            <ul>
+                                <li><a href="">Sea Clothing</a></li>
+                                <li><a href="">Sea Breeze Clothing</a></li>
+                                <li><a href="">Sea Salt Clothing</a></li>
+                                <li><a href="">Sea New York Clothing</a></li>
+                                <li><a href="">Sea</a></li>
+                                <li><a href="">Sea Dresses</a></li>
+                                <li><a href="">Sea Tops</a></li>
+                                <li><a href="">Sea Ny</a></li>
+                                <li><a href="">Sea Green</a></li>
+                                <li><a href="">Sea Cashmere</a></li>
+                                <li><a href="">Sea Folly</a></li>
+                                <li><a href="">Sea Star</a></li>
+                                <li><a href="">Sea Pants</a></li>
+                                <li><a href="">Sea Sweater</a></li>
+                                <li><a href="">Sea Eyelet</a></li>
+                            </ul>
+                        </div>
+                        <div  class="related-searches">
+                            <h3>LOOKING FOR A SPECIFIC BRAND?</h3>
+                            <ul>
+                                <li><a href="">And other stories</a></li>
+                                <li><a href="">ASOS Petite</a></li>
+                                <li><a href="">Coast</a></li>
+                                <li><a href="">I SAW IT FIRST</a></li>
+                                <li><a href="">River Island</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------ main section end here  ---------------------->
+   
+
+    <!------------------------- footer section start here  ----------------->
+    <footer>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <div class="left-footer-div">
+                            <img src="./img/footerLogo.png" class="img-fluid" alt="footer logo">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="signle-footer-section">
+                            <h3>COMPANY</h3>
+                            <ul>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Diversity & Inclusion</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">Orders & Shipping</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="signle-footer-section PARTNER">
+                            <h3>PARTNER</h3>
+                            <ul>
+                                <li><a href="">Influencer Program</a></li>
+                                <li><a href="">Retailers & Brands</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="signle-footer-section">
+                            <h3>GUIDE</h3>
+                            <ul>
+                                <li><a href="">Brands</a></li>
+                                <li><a href="">Pre-owned</a></li>
+                                <li><a href="">Categories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="signle-footer-section">
+                            <h3>LEGAL</h3>
+                            <ul>
+                                <li><a href="">Advertising Disclosure</a></li>
+                                <li><a href="">Terms</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Cookie Policy</a></li>
+                                <li><a href="">Cookie Settings</a></li>
+                                <li><a href="">©2022 ShopStyle Inc.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./icon/heart-fill.svg" alt="">
+
+    </footer>
+    <!------------------------- footer section start here  ----------------->
+
+    <!------------- bootstrap 5 js link here  --------------->
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function(){
+            let mainnav = this.document.querySelector('.main-manu-div');
+            mainnav.classList.toggle('sticky', this.window.scrollY > 50);
+        });
+    </script>
+    <script>
+        const fqas = document.querySelectorAll('.faq-');
+        fqas.forEach((faq)=>{
+            faq.addEventListener("click", ()=>{
+                faq.classList.toggle('active-h');
+            })
+        })
+    </script>
+    <script>
+        let responsive = document.querySelector('.responsive-navbar');
+        function showFunction(){
+            responsive.style.left = "0";
+        }
+        function hideFunction(){
+            responsive.style.left = "-100%";
+        }
+    </script>
+    <script>
+        let addcard_ = document.querySelector('.addcard_');
+        function addCart(){
+            addcard_.classList.toggle('transform');
+            console.log('hello');
+        }
+        
+    </script>
+    <!-- <script>
+        window.addEventListener('scroll', function(){
+
+            var linkgellarysite = document.querySelector('.left-site');
+            var right = document.querySelector('.right');
+
+            if(this.window.pageYOffset >= 50){
+                linkgellarysite.classList.add('link_gellary__site2');
+                right.classList.add('right2');
+                if(this.window.pageYOffset >= 6000){
+                    linkgellarysite.classList.remove('link_gellary__site2');
+                    right.classList.remove('right2');
+
+                }
+            }else{
+                linkgellarysite.classList.remove('link_gellary__site2');
+                right.classList.add('right2');
+            }
+            
+
+        });
+    </script> -->
+</body>
+</html>
